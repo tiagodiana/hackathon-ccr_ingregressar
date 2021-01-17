@@ -1,0 +1,9 @@
+.list-curso-hab
+{
+  list-style: circle;
+  font-size: 18px;
+}
+.list-curso-hab li
+{
+  padding: 5px 0;
+}

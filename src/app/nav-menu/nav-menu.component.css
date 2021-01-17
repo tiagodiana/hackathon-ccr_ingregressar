@@ -1,0 +1,26 @@
+.nav-link
+{
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover
+{
+  border-bottom: 1px solid black;
+}
+
+.dropdownCustom
+{
+  transition: all inherit .4s;
+  background: white;
+  width: 190px;
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  z-index: 9999;
+}
+
+.dropdownCustom .nav-link:hover
+{
+  border-bottom: 1px solid transparent;
+  color: #33adff !important;
+}

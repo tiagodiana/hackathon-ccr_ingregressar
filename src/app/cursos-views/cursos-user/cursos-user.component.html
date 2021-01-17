@@ -1,0 +1,64 @@
+<app-nav-menu></app-nav-menu>
+
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center border-bottom border-light">
+    <div class="col-lg-8 col-6">
+      <div class="h2 font-weight-light py-4 px-5">Meus Cursos</div>
+    </div>
+
+    <div class="col-lg-4 col-6 bg-primary text-white text-right">
+      <div class="col-10 my-3">
+        <div class="h4">Nível de Engajamento</div>
+        <div class="h6 font-weight-light">76 Pontos</div>
+        <ngb-rating [rate]="4.55" [max]="5" [readonly]="true">
+          <ng-template let-fill="fill" let-index="index">
+            <span class="star" [class.filled]="fill === 100" >&#9733;</span>
+          </ng-template>
+        </ngb-rating>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngFor="let c of listCurso"
+    class="row justify-content-center align-items-center"
+    [class.bg-light]="c % 2 === 0"
+  >
+    <div class="col-lg-5 col-12 py-4 px-5">
+      <div class="h4 my-3">Microsoft Word</div>
+      <div class="my-4">
+        <div class="h6 font-weight-light">
+          Este curso preparará você para utilização básica do Microsoft Word.
+        </div>
+      </div>
+      <div class="form-inline mb-2">
+        <button type="button" class="btn btn-sm btn-primary mx-3">Acessar</button>
+        <button type="button" class="btn btn-sm btn-outline-primary mx-3">Emitir Certificado</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="h5 font-weight-light my-4">Iniciado em</div>
+      <div class="h5 my-5">03/01/2021</div>
+    </div>
+    <div class="col">
+      <div class="h5 font-weight-light my-4">Carga Horária</div>
+      <div class="h5 my-5">15 horas</div>
+    </div>
+    <div class="col">
+      <div class="h5 font-weight-light my-4">Progresso</div>
+      <div class="h5 my-5">100%</div>
+    </div>
+    <div class="col">
+      <div class="h5 font-weight-light my-4">Prova</div>
+      <div class="h5 my-5 text-success">100%</div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<app-cursos-search></app-cursos-search>
+
+<app-footer-bar></app-footer-bar>

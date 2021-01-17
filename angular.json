@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "crypto-js"
+            ],
             "outputPath": "dist/front-end",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,9 +31,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/izitoast/dist/css/iziToast.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/izitoast/dist/js/iziToast.min.js",
+              "node_modules/crypto-js/crypto-js.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "front-end"
+  "defaultProject": "front-end",
+  "cli": {
+    "analytics": "c1bc6898-94e8-431f-9740-41f638a380a1"
+  }
 }

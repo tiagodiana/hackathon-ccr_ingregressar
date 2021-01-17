@@ -1,0 +1,45 @@
+<app-nav-menu></app-nav-menu>
+
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center border-bottom border-light">
+    <div class="col-12">
+      <div class="h2 font-weight-light py-4 px-5">Minhas Vagas</div>
+    </div>
+  </div>
+
+  <div
+    *ngFor="let v of listVagas"
+    class="row justify-content-center align-items-center"
+    [class.bg-light]="v % 2 === 0"
+  >
+    <div class="col-lg-5 col-12 p-5">
+      <div class="h4 my-3">Soldador Arco Submerso</div>
+      <div class="my-4">
+        <div class="h6 font-weight-light text-justify">
+          A Vale é uma mineradora global que transforma recursos naturais em prosperidade e desenvolvimento sustentável. Com sede no Brasil e atuação em cerca de 30 países, a empresa emprega aproximadamente cerca de 125 mil empregados, entre próprios e terceiros permanentes.
+        </div>
+      </div>
+      <div class="form-inline mb-2">
+        <button type="button" class="btn btn-sm btn-primary mx-3">Detalhes</button>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="h5 font-weight-light my-2">Status do Processo</div>
+      <div class="h5 mb-5">Em Andamento</div>
+      <div class="h5 font-weight-light my-2">Fase</div>
+      <div class="h5">Avaliação de Currículos</div>
+    </div>
+    <div class="col">
+      <div class="h5 font-weight-light my-4">Empresa</div>
+      <img class="img-fluid rounded-circle" src="assets/images/logo-empresa.png" alt="images/logo-empresa">
+    </div>
+  </div>
+</div>
+
+
+<app-vagas-search></app-vagas-search>
+
+<app-vagas-list></app-vagas-list>
+
+<app-footer-bar></app-footer-bar>

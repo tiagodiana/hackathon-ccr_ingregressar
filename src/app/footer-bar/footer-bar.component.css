@@ -1,0 +1,50 @@
+.fontIcon
+{
+  font-size: 30px;
+}
+
+.face-color
+{
+  color: #0D8CF0;
+}
+
+.insta-color
+{
+  color: #FD5949;
+}
+
+.instagram
+{
+  box-sizing: border-box;
+  display: inline-block;
+  height: 10px !important;
+  padding: 0 !important;
+
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.twitter-color
+{
+  color: #2aa9e0;
+}
+
+.linke-color
+{
+  color: #0a66c2;
+}
+
+.font-footer
+{
+  font-size: 12px;
+}
+
+.font-menu-footer
+{
+  font-size:12px;
+}

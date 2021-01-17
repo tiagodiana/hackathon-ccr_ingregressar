@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+body
+{
+  font-family: Montserrat;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0064d9;
+}
+
+.title-mobile
+{
+  font-size: 30px;
+}
+.title-4
+{
+  font-size: 25px;
+}
+
+.title-5
+{
+  font-size: 20px;
+}
+
+.border-dark-50
+{
+  border-color: rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+.width70
+{
+  height: 500px !important;
+}
+
+.search-input
+{
+  height: 40px;
+}
+
+.btn-search
+{
+  position: absolute;
+  right: 65px;
+}
+
+.btn-search img
+{
+  width: 20px;
+}
+
+.row-cards
+{
+  position: relative;
+  top:70px;
+}
+
+.vh-100-max
+{
+  max-height: 100vh;
+}

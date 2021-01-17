@@ -1,0 +1,119 @@
+<div class="container ">
+  <div class="row">
+    <div class="col-12 text-center my-4">
+      <img src="assets/images/logo.png" alt="ingressar">
+    </div>
+    <div class="col-12 text-center">
+      <div class="h4 font-weight-light  d-md-block d-none">
+        Aqui você poderá encontrar cursos e oportunidades de emprego em sua cidade.
+      </div>
+      <div class="h5 font-weight-light d-md-none d-block">
+        Aqui você poderá encontrar cursos e oportunidades de emprego em sua cidade.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<hr>
+
+
+<div class="container mb-sm-3">
+  <div class="row">
+    <div class="px-lg-5 pt-4 col-lg-6 col-12 mx-auto mt-lg-1 border border-dark-50 d-none d-md-block">
+      <div class="col-12 my-5">
+        <div class="h4">O que você está procurando?</div>
+      </div>
+
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-6 pt-5">
+          <img src="assets/images/book.png" class="img-fluid">
+          <div class="h5 font-weight-light">Cursos de Qualificação e Oportunidades de Emprego</div>
+        </div>
+        <div class="col-6">
+          <img src="assets/images/personplus.png" class="img-fluid">
+          <div class="h5 font-weight-light ">Jovens Profissionais para sua Empresa</div>
+        </div>
+      </div>
+    </div>
+
+
+    <form
+      #formSignup="ngForm"
+      class="px-lg-5 pt-4 col-lg-5 col-10 mx-auto mt-lg-1 border border-dark-50"
+      [class.was-validated]="validator"
+      (ngSubmit)="signup(formSignup)"
+    >
+
+      <div class="row ">
+        <div class="col-12">
+          <p class="h4 mb-4">Crie sua Conta</p>
+        </div>
+      </div>
+
+      <!-- Nome -->
+      <div class="form-group">
+        <label>Nome</label>
+        <input
+          required
+          type="nome"
+          id="nome"
+          name="nome"
+          class="form-control erro"
+          placeholder="Nome completo"
+          [(ngModel)]="jovem.nome"
+        >
+      </div>
+
+      <!-- E-mail -->
+      <div class="form-group">
+        <label>E-mail</label>
+        <input
+          required
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="E-mail"
+          [(ngModel)]="jovem.email"
+        >
+      </div>
+
+      <!-- Senha -->
+      <div class="form-group">
+        <label>Senha</label>
+        <input
+          required
+          type="password"
+          id="senha"
+          name="senha"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="senha"
+        >
+      </div>
+
+      <!-- Senha -->
+      <div class="form-group">
+        <label>Confirme sua Senha</label>
+        <input
+          required
+          type="password"
+          id="csenha"
+          name="csenha"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="csenha"
+        >
+      </div>
+
+
+      <!-- Sign in button -->
+      <button type="submit" class="btn btn-primary btn-block my-4" >Registrar</button>
+
+    </form>
+  </div>
+
+</div>
+

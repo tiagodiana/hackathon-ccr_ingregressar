@@ -1,0 +1,103 @@
+<app-nav-menu></app-nav-menu>
+
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-12 text-center  mb-3 mt-5">
+      <div class="h2">Meu Cadastro</div>
+    </div>
+
+    <div class="col-12 text-center my-3">
+      <div class="h3 font-weight-light">Mantenha seus dados cadastrais atualizados</div>
+    </div>
+
+    <div class="col-12 border border-secondary rounded">
+
+      <div class="h5 mx-3 my-4 font-weight-bold">Meus dados</div>
+
+      <form
+        #formEditUser='ngForm'
+        class="m-3"
+        [class.was-validated]="validator"
+        (ngSubmit)="editUser(formEditUser)">
+        <div class="row">
+
+          <div class="col-lg-6 col-12">
+
+            <div class="form-group">
+              <label>Nome</label>
+              <input required type="text" id="nome" name="nome" class="form-control" placeholder="Nome Completo">
+            </div>
+            <div class="form-group">
+              <label>E-mail</label>
+              <input required type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+            </div>
+
+            <div class="h5 mt-5 font-weight-bold">Alterar Senha</div>
+
+            <div class="row">
+              <div class="form-group col-6">
+                <label>Nova Senha</label>
+                <input type="password" id="senha" name="senha" class="form-control">
+              </div>
+
+              <div class="form-group col-6">
+                <label>Confirme a Senha</label>
+                <input type="password" id="csenha" name="csenha" class="form-control">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-6 col-12">
+            <div class="row">
+              <!--ENDEREÇO-->
+              <div class="form-group col-12">
+                <label>CEP</label>
+                <input type="text" id="cep" name="cep" class="form-control" placeholder="00000-000">
+              </div>
+              <div class="form-group col-12">
+                <label>Logradouro</label>
+                <input type="text" id="rua" name="rua" class="form-control" placeholder="Logradouro">
+              </div>
+              <div class="form-group col-4">
+                <label>Número</label>
+                <input type="number" id="numero" name="numero" class="form-control" placeholder="Numero">
+              </div>
+              <div class="form-group col-8">
+                <label>Bairro</label>
+                <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Bairro">
+              </div>
+
+              <div class="form-group col-12">
+                <label>Complemento</label>
+                <input type="text" id="complemento" name="complemento" class="form-control" placeholder="Complemento">
+              </div>
+
+              <div class="form-group col-9">
+                <label>Cidade</label>
+                <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade">
+              </div>
+
+              <div class="form-group col-3">
+                <label>UF</label>
+                <input type="text" id="estado" name="estado" class="form-control" placeholder="Estado">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 text-center my-3">
+            <button type="button" class="btn btn-primary btn-block">Enviar</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+
+<app-footer-bar></app-footer-bar>

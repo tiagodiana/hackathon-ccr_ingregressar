@@ -1,0 +1,26 @@
+<app-nav-menu></app-nav-menu>
+
+<!--LAYOUT SEM LOGIN-->
+<!--BANNER-->
+<app-banner *ngIf="!isLogin"></app-banner>
+
+<!--DESTAQUES-->
+<app-destaque *ngIf="!isLogin"></app-destaque>
+
+<!--ASSINATURA-->
+<app-assinatura *ngIf="!isLogin"></app-assinatura>
+<!--FIM LAYOUT SEM LOGIN-->
+
+<app-cursos-search *ngIf="isLogin"></app-cursos-search>
+
+<app-home-compartilhar *ngIf="isLogin"></app-home-compartilhar>
+
+<app-vagas-search *ngIf="isLogin"></app-vagas-search>
+
+<app-vagas-list *ngIf="isLogin"></app-vagas-list>
+
+
+
+<app-footer-bar></app-footer-bar>
+
+

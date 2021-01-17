@@ -1,0 +1,89 @@
+<div class="container ">
+  <div class="row">
+    <div class="col-12 text-center my-4">
+      <img src="assets/images/logo.png" alt="ingressar">
+    </div>
+    <div class="col-12 text-center">
+      <div class="h4 font-weight-light  d-md-block d-none">
+        Encontre grandes oportunidades em sua cidade.
+      </div>
+      <div class="h5 font-weight-light d-md-none d-block">
+        Encontre grandes oportunidades em sua cidade.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<hr>
+
+
+<div class="container">
+  <form
+    #formLogin='ngForm'
+    (ngSubmit)="sendLogin(formLogin)"
+    class="p-lg-3 col-lg-6 col-12 mx-auto mt-lg-2"
+    [class.was-validated]="validate"
+  >
+
+    <div class="row text-center">
+      <div class="col-12">
+        <p class="h4 mb-4">LOGIN</p>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label>E-mail</label>
+      <input
+        required
+        name="email"
+        type="email"
+        id="email"
+        class="form-control mb-4"
+        placeholder="E-mail"
+        [(ngModel)]="login.email"
+      >
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label>Senha</label>
+      <input
+        required
+        name="senha"
+        type="password"
+        id="senha"
+        class="form-control mb-4"
+        placeholder="Senha"
+        [(ngModel)]="senha"
+      >
+    </div>
+
+
+
+
+    <!-- Sign in button -->
+    <button type="button" class="btn btn-primary btn-block my-4" type="submit">Entrar</button>
+
+    <div class="d-flex justify-content-around my-4">
+      <div>
+        <a href="javascript:;" routerLink="/forgetpassword">Esqueceu a senha?</a>
+      </div>
+    </div>
+    <!-- Register -->
+    <div class="row text-center">
+      <div class="col-12">
+        <p>Ainda não tem conta?</p>
+        <button type="button" class="btn btn-outline-primary btn-block" routerLink="/signup">
+          Cadastrar-se
+        </button>
+      </div>
+    </div>
+
+
+
+  </form>
+</div>
+
