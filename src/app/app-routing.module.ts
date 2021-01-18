@@ -10,6 +10,7 @@ import {VagasDetailsComponent} from './vagas-views/vagas-details/vagas-details.c
 import {VagasUserComponent} from './vagas-views/vagas-user/vagas-user.component';
 import {ProfileEditComponent} from './profile-edit/profile-edit.component';
 import {VocationalTestComponent} from './vocational-test/vocational-test.component';
+import {CursosAllComponent} from './cursos-views/cursos-all/cursos-all.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent},
   {path: 'forgetpassword', component: ForgetPasswordComponent},
   {path: 'forgetpassword/:token', component: ForgetPasswordComponent},
+  {path: 'cursos', component: CursosAllComponent},
   {path: 'cursosDetails/:id', component: CursosDetailsComponent},
   {path: 'cursosUser', component: CursosUserComponent},
   {path: 'vagasDetails/:id', component: VagasDetailsComponent},
