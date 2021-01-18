@@ -5,23 +5,26 @@
     </div>
   </div>
 
-  <div class="row p-5">
-    <div class="col-lg-6 col-12 my-5" *ngFor="let l of list">
+  <div class="row p-5" *ngIf="list$ | async">
+    <div class="col-lg-6 col-12 my-5" *ngFor="let l of list; let i = index">
       <div class="col-12">
-        <div class="bg-info rounded-circle" style="width: 9rem; height: 9rem">
+        <!--<div class="bg-info rounded-circle" style="width: 9rem; height: 9rem">
 
+        </div>-->
+        <div class="my-3">
+          <img src="assets/images/empresa{{i+1}}.png" alt="empresa img" class="img-fluid rounded-circle">
         </div>
 
         <div class="h5 mt-5">
-          Soladador Mig/Mag
+          {{l.nome}}
         </div>
 
         <div class="text-capitalize">
-          <p>A Vale é uma mineradora global que transforma recursos naturais em prosperidade e desenvolvimento sustentável. Com sede no Brasil e atuação em cerca de 30 países, a empresa emprega aproximadamente cerca de 125 mil empregados, entre próprios e terceiros permanentes.</p>
+          <p>{{l.descricao}}</p>
         </div>
 
         <div>
-          <button type="button" class="btn btn-primary" [routerLink]="['/vagasDetails', l]">Saiba mais</button>
+          <button type="button" class="btn btn-primary" [routerLink]="['/vagasDetails', l.id]">Saiba mais</button>
         </div>
       </div>
     </div>

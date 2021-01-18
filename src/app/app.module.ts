@@ -28,6 +28,7 @@ import { CursosUserComponent } from './cursos-views/cursos-user/cursos-user.comp
 import { VagasDetailsComponent } from './vagas-views/vagas-details/vagas-details.component';
 import { VagasUserComponent } from './vagas-views/vagas-user/vagas-user.component';
 import { ProfileEditComponent } from './profile-edit/profile-edit.component';
+import { VocationalTestComponent } from './vocational-test/vocational-test.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ProfileEditComponent } from './profile-edit/profile-edit.component';
     CursosUserComponent,
     VagasDetailsComponent,
     VagasUserComponent,
-    ProfileEditComponent
+    ProfileEditComponent,
+    VocationalTestComponent
   ],
   imports: [
     BrowserModule,

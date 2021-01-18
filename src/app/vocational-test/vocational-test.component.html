@@ -1,0 +1,272 @@
+<app-nav-menu></app-nav-menu>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <img src="assets/images/banner-test.png" alt="banner test" class="img-fluid">
+    </div>
+  </div>
+
+  <div class="row p-5">
+    <div class="h3 my-3 col-12">Quiz</div>
+    <div class="col-12 text-justify my-4">
+      <p>O teste vocacional é uma ferramenta que faz parte da orientação vocacional e permite identificar a sua compatibilidade com as áreas disponíveis no mercado e o seu perfil. Esse instrumento evita situações futuras que possam gerar frustrações.</p>
+    </div>
+
+    <form
+      #formTest='ngForm'
+      class="col-12">
+
+
+      <div class="h5 mb-4">1. Se eu fosse um ator e pudesse escolher um papel, gostaria de representar:</div>
+      <div class="form-group">
+        <input type="radio" name="question1" id="question1_1"  class="custom-radio mr-2">
+        <label for="question1_1">
+          a. Um líder Social
+        </label>
+        <br>
+        <input type="radio" name="question1" id="question1_2"  class="custom-radio mr-2">
+        <label for="question1_2">
+          b. Um artista
+        </label>
+        <br>
+        <input type="radio" name="question1" id="question1_3"  class="custom-radio mr-2">
+        <label for="question1_3">
+          c. Um defensor do meio ambiente
+        </label>
+        <br>
+        <input type="radio" name="question1" id="question1_4"  class="custom-radio mr-2">
+        <label for="question1_4">
+          d. Um cientista
+        </label>
+      </div>
+
+      <div class="h5 mb-4">2. As qualidades que mais admiro nas pessoas são:</div>
+      <div class="form-group">
+        <input type="radio" name="question2" id="question2_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. Inteligência de cultura
+        </label>
+        <br>
+        <input type="radio" name="question2" id="question2_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. Criatividade e alto-astral
+        </label>
+        <br>
+        <input type="radio" name="question2" id="question2_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. Experiência e maturidade
+        </label>
+        <br>
+        <input type="radio" name="question2" id="question2_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. Determinação e iniciativa
+        </label>
+      </div>
+
+      <div class="h5 mb-4">3. Sinto prazer em:</div>
+      <div class="form-group">
+        <input type="radio" name="question3" id="question3_1"  class="custom-radio mr-2">
+        <label for="question3_1">
+          a. Navegar na internet e lidar com a tecnologia
+        </label>
+        <br>
+        <input type="radio" name="question3" id="question3_2"  class="custom-radio mr-2">
+        <label for="question3_2">
+          b. Dar conselhos, defender causas e pessoas
+        </label>
+        <br>
+        <input type="radio" name="question3" id="question3_3"  class="custom-radio mr-2">
+        <label for="question3_3">
+          c. Expressar minha criatividade e emoções
+        </label>
+        <br>
+        <input type="radio" name="question3" id="question3_4"  class="custom-radio mr-2">
+        <label for="question3_4">
+          d. Cuidar de pessoas, animais e natureza
+        </label>
+      </div>
+
+
+      <div class="h5 mb-4">4. Assinale a alternativa que possui mais profissões do seu interesse:</div>
+      <div class="form-group">
+        <input type="radio" name="question4" id="question4_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. Música, Teatro, Educação, Artística, Moda, Decoração, Cinema, Dança, Fotografia, Desenho Industrial, Design.
+        </label>
+        <br>
+        <input type="radio" name="question4" id="question4_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. Enfermagem, Medicina Veterinária, Fisioterapia, Odontologia, Farmácia, Nutrição, Fonoaudiologia.
+        </label>
+        <br>
+        <input type="radio" name="question4" id="question4_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. Sociologia, Economia, Direito, Publicidade, Jornalismo, Administração, Letras, Pedagogia, Psicologia, Serviço Social.
+        </label>
+        <br>
+        <input type="radio" name="question4" id="question4_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. Engenharia, Química, Física, Matemática, Astronomia, Agronomia, Arquitetura, Ciência da Computação, Geologia.
+        </label>
+      </div>
+
+
+      <div class="h5 mb-4">5. Qual filme mais se assemelha às suas características pessoais:</div>
+      <div class="form-group">
+        <input type="radio" name="question5" id="question5_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. "Patch Adams - O amor é contagioso" - Acho que todos merecem receber bons cuidados e atenção
+        </label>
+        <br>
+        <input type="radio" name="question5" id="question5_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. "Náufrago" - Como o protagonista, dou muito valor ao contato com as pessoas
+        </label>
+        <br>
+        <input type="radio" name="question5" id="question5_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. "A procura da felicidade" - Assim como o ator principal, gosto de lidar com número, precisão e rotina
+        </label>
+        <br>
+        <input type="radio" name="question5" id="question5_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. "O sorriso de Mona lisa" - Adoro a história da arte e da nossa evolução cultural
+        </label>
+      </div>
+
+
+      <div class="h5 mb-4">6. Na escola, sempre tirei as melhores notas na (s) seguinte (s) disciplina (s):</div>
+      <div class="form-group">
+        <input type="radio" name="question6" id="question6_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. Língua portuguesa e história
+        </label>
+        <br>
+        <input type="radio" name="question6" id="question6_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. Biologia, Matemática e Língua portuguesa
+        </label>
+        <br>
+        <input type="radio" name="question6" id="question6_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. Matemática, Física e Química
+        </label>
+        <br>
+        <input type="radio" name="question6" id="question6_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. Educação Artística
+        </label>
+      </div>
+
+
+      <div class="h5 mb-4">7. Dos ambientes indicados a seguir, com qual você se identifica mais:</div>
+      <div class="form-group">
+        <input type="radio" name="question7" id="question7_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. Música, tocando diversos estilos
+        </label>
+        <br>
+        <input type="radio" name="question7" id="question7_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. Silencioso, um escritório ou sala individual
+        </label>
+        <br>
+        <input type="radio" name="question7" id="question7_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. Muitas pessoas conversando entre si
+        </label>
+        <br>
+        <input type="radio" name="question7" id="question7_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. Ambiente muito limpo, organizado e de preferência, silencioso
+        </label>
+      </div>
+
+
+      <div class="h5 mb-4">8. Em meu quarto não pode faltar:</div>
+      <div class="form-group">
+        <input type="radio" name="question8" id="question8_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. Faxina, produtos de higiene pessoal e remédios
+        </label>
+        <br>
+        <input type="radio" name="question8" id="question8_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. Musica, quadros e fotos nas paredes
+        </label>
+        <br>
+        <input type="radio" name="question8" id="question8_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. Algo para ler como, revistas, livros etc.
+        </label>
+        <br>
+        <input type="radio" name="question8" id="question8_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. Um computador e privacidade
+        </label>
+      </div>
+
+
+      <div class="h5 mb-4">9. Nos meus momentos de lazer, eu sempre procuro:</div>
+      <div class="form-group">
+        <input type="radio" name="question9" id="question9_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. Conversar com os amigos ou ler um livro
+        </label>
+        <br>
+        <input type="radio" name="question9" id="question9_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. Ouvir músicas, dançar, fazer passeios culturais
+        </label>
+        <br>
+        <input type="radio" name="question9" id="question9_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. Estar em contato com a natureza e praticar esportes
+        </label>
+        <br>
+        <input type="radio" name="question9" id="question9_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. Jogar alguma coisa no computador, vídeo-game, tabuleiro etc.
+        </label>
+      </div>
+
+
+      <div class="h5 mb-4">10. Considero uma leitura prazerosa:</div>
+      <div class="form-group">
+        <input type="radio" name="question10" id="question10_1"  class="custom-radio mr-2">
+        <label for="question2_1">
+          a. Livros sobre saúde e estilo de vida
+        </label>
+        <br>
+        <input type="radio" name="question10" id="question10_2"  class="custom-radio mr-2">
+        <label for="question2_2">
+          b. Livros de astronomia e cálculos
+        </label>
+        <br>
+        <input type="radio" name="question10" id="question10_3"  class="custom-radio mr-2">
+        <label for="question2_3">
+          c. Livros de auto ajuda
+        </label>
+        <br>
+        <input type="radio" name="question10" id="question10_4"  class="custom-radio mr-2">
+        <label for="question2_4">
+          d. Livros de design, fotografia e moda
+        </label>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-block" (click)="sendTest(formTest)">Enviar</button>
+      </div>
+
+
+
+    </form>
+
+
+  </div>
+</div>
+
+
+
+<app-footer-bar></app-footer-bar>

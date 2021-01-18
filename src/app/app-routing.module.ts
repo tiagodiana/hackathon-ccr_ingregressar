@@ -9,6 +9,7 @@ import {CursosUserComponent} from './cursos-views/cursos-user/cursos-user.compon
 import {VagasDetailsComponent} from './vagas-views/vagas-details/vagas-details.component';
 import {VagasUserComponent} from './vagas-views/vagas-user/vagas-user.component';
 import {ProfileEditComponent} from './profile-edit/profile-edit.component';
+import {VocationalTestComponent} from './vocational-test/vocational-test.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'vagasDetails/:id', component: VagasDetailsComponent},
   {path: 'vagasUser', component: VagasUserComponent},
   {path: 'userEdit', component: ProfileEditComponent},
+  {path: 'vocationalTest', component: VocationalTestComponent}
 ];
 
 @NgModule({
