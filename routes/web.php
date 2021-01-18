@@ -14,11 +14,11 @@
 */
 
 $router->get('/factory', function () use ($router) {
-    \App\Models\Jovem::factory()->count(5)->create();
-    \App\Models\Curriculo::factory()->count(5)->create();
-    \App\Models\Empresa::factory()->count(5)->create();
-    \App\Models\Vagas::factory()->count(5)->create();
-    \App\Models\Endereco::factory()->count(5)->create();
+    /*\App\Models\Jovem::factory()->count(5)->create();*/
+    /*\App\Models\Curriculo::factory()->count(5)->create();*/
+    \App\Models\Empresa::factory()->count(4)->create();
+    \App\Models\Vagas::factory()->count(4)->create();
+    /*\App\Models\Endereco::factory()->count(5)->create();*/
 });
 
 /*INDEX*/
@@ -32,7 +32,7 @@ $router->group(['prefix'=>'/jovem'], function () use ($router) {
     $router->get('/{id}', 'JovemController@get');
     $router->post('/add', 'JovemController@add');
     $router->put('/update/{id}', 'JovemController@update');
-    $router->delete('/update/{id}', 'JovemController@delete');
+    $router->delete('/delete/{id}', 'JovemController@delete');
 });
 
 
@@ -42,7 +42,7 @@ $router->group(['prefix'=>'/curriculo'], function () use ($router) {
     $router->get('/{id}', 'CurriculoController@get');
     $router->post('/add', 'CurriculoController@add');
     $router->put('/update/{id}', 'CurriculoController@update');
-    $router->delete('/update/{id}', 'CurriculoController@delete');
+    $router->delete('/delete/{id}', 'CurriculoController@delete');
 });
 
 /*EMPRESA*/
@@ -51,7 +51,7 @@ $router->group(['prefix'=>'/empresa'], function () use ($router) {
     $router->get('/{id}', 'EmpresaController@get');
     $router->post('/add', 'EmpresaController@add');
     $router->put('/update/{id}', 'EmpresaController@update');
-    $router->delete('/update/{id}', 'EmpresaController@delete');
+    $router->delete('/delete/{id}', 'EmpresaController@delete');
 });
 
 
@@ -61,7 +61,7 @@ $router->group(['prefix'=>'/endereco'], function () use ($router) {
     $router->get('/{id}', 'EnderecoController@get');
     $router->post('/add', 'EnderecoController@add');
     $router->put('/update/{id}', 'EnderecoController@update');
-    $router->delete('/update/{id}', 'EnderecoController@delete');
+    $router->delete('/delete/{id}', 'EnderecoController@delete');
 });
 
 /*VAGAS*/
@@ -70,7 +70,7 @@ $router->group(['prefix'=>'/vagas'], function () use ($router) {
     $router->get('/{id}', 'VagasController@get');
     $router->post('/add', 'VagasController@add');
     $router->put('/update/{id}', 'VagasController@update');
-    $router->delete('/update/{id}', 'VagasController@delete');
+    $router->delete('/delete/{id}', 'VagasController@delete');
 });
 
 $router->group(['prefix' => '/auth'], function () use ($router){
